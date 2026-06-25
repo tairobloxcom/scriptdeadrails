@@ -1,47 +1,20 @@
-# TaiRoblox - Script Dead Rails GitHub Pages
+# GitHub Pages Static - Dead Rails
 
-Bộ mã tĩnh dùng để chạy trang bài viết **Tổng Hợp Script Dead Rails** trên GitHub Pages.
+Bộ code đã được chuyển từ HTML WordPress sang bản static chạy trên GitHub Pages.
 
-## Cấu trúc
+## Cách dùng
 
-```txt
-tairoblox-script-dead-rails-github-pages-y-chang-fixed/
-├── index.html
-├── README.md
-├── robots.txt
-├── sitemap.xml
-├── .nojekyll
-└── assets/
-    ├── github-fix.css
-    └── github-fix.js
-```
+1. Upload `index.html` lên root repo GitHub.
+2. Vào **Settings → Pages**.
+3. Chọn branch `main` và folder `/root`.
+4. Save và mở link GitHub Pages.
 
-## Cách deploy lên GitHub Pages
+## Nội dung đã xử lý
 
-1. Giải nén file ZIP.
-2. Tạo repository GitHub mới.
-3. Upload toàn bộ file trong thư mục này lên repo.
-4. Đảm bảo `index.html` nằm ở thư mục gốc của repo.
-5. Vào `Settings` → `Pages`.
-6. Chọn `Deploy from a branch`.
-7. Chọn branch `main` và folder `/root`.
-8. Bấm `Save`.
+- Giữ lại giao diện chính: header, bảng thông tin, nút tải, nội dung bài viết, FAQ, author box.
+- Bỏ phần admin bar WordPress, wpDiscuz/comment form, shortcode edit block, script/plugin thừa.
+- Sửa nút tải để không lỗi CORS/AJAX khi chạy trên GitHub Pages.
+- Tối ưu responsive mobile.
+- Giữ meta SEO, Open Graph, Twitter Card và Schema JSON-LD từ bài gốc.
 
-## Sau khi deploy
-
-Mở các file sau và đổi `USERNAME` thành username GitHub thật của bạn:
-
-- `robots.txt`
-- `sitemap.xml`
-
-Ví dụ:
-
-```txt
-https://USERNAME.github.io/tairoblox-script-dead-rails/
-```
-
-## Ghi chú
-
-Đây là bản static snapshot từ HTML gốc. Các thành phần phụ thuộc WordPress như admin bar, customizer, AJAX, WP Rocket, Cloudflare beacon và script quản trị đã được loại bỏ để chạy ổn định trên GitHub Pages.
-
-Các ảnh và CSS gốc vẫn hotlink từ `tairoblox.com`. Nếu website gốc chặn hotlink hoặc thay đổi đường dẫn asset, bạn cần tải asset về local và cập nhật lại đường dẫn trong `index.html`.
+Nguồn canonical: https://tairoblox.com/dead-rails/
