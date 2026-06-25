@@ -1,0 +1,180 @@
+/* GitHub Pages static fixes for TaiRoblox / Script Dead Rails */
+html { margin-top: 0 !important; scroll-behavior: smooth; }
+body { margin: 0; background: #fff; }
+#wpadminbar,
+.block-edit-link,
+.edit-block-wrapper,
+.edit-block-button,
+.shortcode-error,
+.xdebug-var-dump { display: none !important; }
+
+body.admin-bar,
+body.logged-in { padding-top: 0 !important; }
+
+.header-wrapper,
+.header-main,
+#masthead {
+  top: 0 !important;
+}
+
+.header-bg-color { background-color: #335fff !important; }
+#logo img { object-fit: contain; }
+
+.containner-detail,
+#main > .row {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post-content img,
+.img-blog img,
+.wp-caption img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.wp-caption {
+  max-width: 100% !important;
+}
+
+.wp-caption-text {
+  text-align: center;
+  font-size: 13px;
+  color: #666;
+  margin-top: 6px;
+}
+
+.post-content pre,
+.github-safe-code-block {
+  display: block;
+  white-space: pre-wrap;
+  word-break: break-word;
+  background: #101828;
+  color: #e5e7eb;
+  border-radius: 10px;
+  padding: 16px;
+  border: 1px solid #253045;
+  font-size: 14px;
+  line-height: 1.55;
+  overflow-x: auto;
+}
+
+.github-safe-code-block {
+  background: #fff7ed;
+  color: #9a3412;
+  border-color: #fed7aa;
+}
+
+.social-icons a,
+.follow-icons a {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  margin: 4px;
+}
+
+.rating {
+  display: inline-flex;
+  gap: 2px;
+  align-items: center;
+}
+
+.github-star {
+  color: #f59e0b;
+  font-size: 15px;
+  line-height: 1;
+}
+
+.mobile-sidebar.github-open {
+  display: block !important;
+  position: fixed;
+  inset: 0 auto 0 0;
+  width: min(84vw, 320px);
+  z-index: 99999;
+  background: #fff;
+  box-shadow: 0 0 0 9999px rgba(0,0,0,.45);
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.mobile-sidebar.github-open .nav-sidebar {
+  display: block;
+}
+
+.github-menu-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 0;
+  border-radius: 999px;
+  background: #335fff;
+  color: #fff;
+  font-size: 22px;
+  float: right;
+  cursor: pointer;
+}
+
+.header-search-form input[type="search"] {
+  border-radius: 8px;
+}
+
+.custom-app-card-content-news {
+  align-items: center;
+}
+
+.custom-app-card-thumb-news img {
+  max-width: 100%;
+}
+
+.footer-wrapper,
+.absolute-footer {
+  background: #335fff;
+}
+
+.absolute-footer {
+  color: #fff;
+}
+
+@media (max-width: 849px) {
+  html { margin-top: 0 !important; }
+  .hide-for-medium { display: none !important; }
+  .show-for-medium { display: block !important; }
+  .header-inner { min-height: 70px; }
+  #main > .row {
+    display: block;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  #main > .row > .col {
+    max-width: 100% !important;
+    flex-basis: 100% !important;
+  }
+  .custom-app-card-content-news {
+    gap: 12px;
+  }
+  .custom-app-card-thumb-news {
+    flex: 0 0 110px;
+    max-width: 110px;
+  }
+  .custom-app-card-title {
+    width: auto !important;
+  }
+}
+
+@media (max-width: 549px) {
+  .post-header {
+    text-align: center;
+    align-items: center !important;
+  }
+  .post-thumbnail {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer-wrapper .col {
+    flex-basis: 100% !important;
+    max-width: 100% !important;
+  }
+}
